@@ -1,0 +1,43 @@
+import logo from './logo.svg';
+import './App.css';
+import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer';
+import MainLayout from './Components/Layout/MainLayout';
+import { createBrowserRouter,createHashRouter,RouterProvider } from 'react-router-dom';
+import Porto from './Components/Porto/Porto';
+import About from './Components/About/About';
+import Home from './Components/Home/Home';
+import Contact from './Components/Contact/Contact';
+// import MainLayout from './Components/Layout/MainLayout';
+
+
+function App() {
+  let routes=createHashRouter([
+    {
+      path:'/',element: <MainLayout/>,children:[
+      {path:'home',element: <Home />},
+      {path:'about',element: <About/>},
+      {path:'porto',element: <Porto/>},
+      {path:'contact',element: <Contact/>}
+    ],
+  }
+   
+  ])
+  return (
+   <>
+   
+   {/* <NavBar /> */}
+  
+  
+   <RouterProvider router={routes} />
+   <Footer />
+
+
+
+
+
+   </>
+  );
+}
+
+export default App;
