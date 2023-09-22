@@ -14,7 +14,7 @@ export default function Porto() {
       <div className="row">
         <div className="col-md-4 my-4">
           <div className="imagez position-relative">
-          <img src="/port1.png" className="w-100 rounded-2" alt="" />
+          <img src="../../port1.png" className="w-100 rounded-2" alt="" />
           <div className="layout d-flex justify-content-around align-items-center position-absolute top-0  w-100 h-100 rounded-2">
           <i _ngcontent-gtt-c19="" className="text-white fa-solid fa-plus fa-6x"></i>
           </div>
