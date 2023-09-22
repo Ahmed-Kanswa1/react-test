@@ -14,7 +14,7 @@ import Contact from './Components/Contact/Contact';
 function App() {
   let routes=createHashRouter([
     {
-      path:'/',element: <MainLayout/>,children:[
+      path:'',element: <MainLayout/>,children:[
       {path:'home',element: <Home />},
       {path:'about',element: <About/>},
       {path:'porto',element: <Porto/>},
